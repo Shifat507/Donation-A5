@@ -46,37 +46,44 @@
             </div>
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-xl font-medium">What causes are you collecting donations for?</div>
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
                 <div class="collapse-content">
-                    <p>We are currently raising funds for two critical causes: flood relief in Noakhali and Feni, and support for the quota movement in Bangladesh. Donations will go directly towards providing essential aid, such as food, clean water, medical supplies, and infrastructure support for flood victims, as well as advocacy and support for students involved in the quota reform movement.</p>
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document (such as HTML or XML) as a tree of objects, where each node is an element, attribute, or text. It allows developers to access and manipulate the content, structure, and styles of a document programmatically using JavaScript.</p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">How can I ensure that my donation is being used for the intended purpose?</div>
+                <div class="collapse-title text-xl font-medium">How do you select an element from a DOM?</div>
                 <div class="collapse-content">
-                    <p>Transparency is our priority. We regularly update our donors with reports and documentation showing where and how the funds are being allocated. Additionally, our website features live updates and stories from the ground to ensure full transparency.</p>
+                    <p>To select an element from the DOM, you can use several methods provided by JavaScript, such as: <br>
+                        document.getElementById("id") : Selects an element by its unique ID. <br>
+                        document.getElementsByClassName("class") : Selects elements by class name. <br>
+                        document.getElementsByTagName("tag") : Selects elements by their tag name. <br>
+                        document.querySelector("selector") : Selects the first element that matches a CSS selector. <br>
+                        document.querySelectorAll("selector") : Selects all elements that match a CSS selector.</p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Can I choose which cause my donation supports?</div>
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of DOM, and why is it useful?</div>
                 <div class="collapse-content">
-                    <p>Yes, you can specify whether your donation should go towards flood relief efforts in Noakhali and Feni or the quota movement in Bangladesh. During the donation process, there is an option to select your preferred cause.</p>
+                    <p>Event delegation is a technique in which a single event listener is attached to a parent element to manage events for multiple child elements. Instead of attaching individual event listeners to each child, the parent listens for an event and checks if it originated from a specific child using event.target.
+                        This technique is useful because it:
+                        Reduces the number of event listeners attached to elements, which improves performance.
+                        Dynamically handles elements that are added or removed from the DOM after the event listener is attached.</p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Is there a minimum donation amount?</div>
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using DOM?</div>
                 <div class="collapse-content">
-                    <p>No, every contribution, no matter how small, makes a difference. We welcome donations of any size, and every amount will help those in need during these difficult times.</p>
-                </div>
-            </div>
-            <div class="collapse collapse-arrow bg-base-200">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">How can I track the progress of the donation campaigns?</div>
-                <div class="collapse-content">
-                    <p>You can track the progress of both campaigns on our website's "Progress Tracker" section. This section shows the total funds raised, the number of beneficiaries, and live updates from the relief efforts and quota movement activities.</p>
+                    <p><span class="font-semibold">To manipulate an element's attributes:</span> <br>
+                        Use element.setAttribute("attribute", "value") to set a new attribute or modify an existing one.
+                        Use element.getAttribute("attribute") to get the value of an attribute.
+                        Use element.removeAttribute("attribute") to remove an attribute. <br>
+                        <span class="font-semibold">To manipulate an element's styles:</span> <br>
+                        Use element.style.property = "value" to change specific CSS properties (e.g., element.style.color = "blue").
+                        Use element.classList.add("className"), element.classList.remove("className"), or element.classList.toggle("className") to add or remove classes from an element for bulk style changes.</p>
                 </div>
             </div>
         </section>
