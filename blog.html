@@ -9,8 +9,81 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="">
+    <header class=sticky top-0 left-0  "></header>
+        <nav class="mx-auto px-10 ">
+            <div class="navbar bg-slate-100">
+                <div class="navbar-start">
+                    <button id="btn-home"
+                        class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-bold py-2 px-5 rounded">Home</button>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <div class="flex gap-2 items-center">
+                        <div><img src="assets/donation-logo.png" alt=""></div>
+                        <div>
+                            <h2 class="text-xl font-bold">Donate Bangladesh</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <div class="flex gap-2 items-center">
+                        <div>
+                            <img src="assets/coin.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="text-sm md:text-xl font-bold"><span id="total-balance">Amount</span> BDT</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="">
+        <section id="f-q" class="container mx-auto w-11/12">
+            <div class="flex items-center gap-3">
+                <h1 class="border-s-8 border-red-700 text-2xl font-bold my-10 ps-2">Important FAQ</h1>
+                <img class="w-20" src="assets/FAQ.gif" alt="">
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What causes are you collecting donations for?</div>
+                <div class="collapse-content">
+                    <p>We are currently raising funds for two critical causes: flood relief in Noakhali and Feni, and support for the quota movement in Bangladesh. Donations will go directly towards providing essential aid, such as food, clean water, medical supplies, and infrastructure support for flood victims, as well as advocacy and support for students involved in the quota reform movement.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How can I ensure that my donation is being used for the intended purpose?</div>
+                <div class="collapse-content">
+                    <p>Transparency is our priority. We regularly update our donors with reports and documentation showing where and how the funds are being allocated. Additionally, our website features live updates and stories from the ground to ensure full transparency.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Can I choose which cause my donation supports?</div>
+                <div class="collapse-content">
+                    <p>Yes, you can specify whether your donation should go towards flood relief efforts in Noakhali and Feni or the quota movement in Bangladesh. During the donation process, there is an option to select your preferred cause.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Is there a minimum donation amount?</div>
+                <div class="collapse-content">
+                    <p>No, every contribution, no matter how small, makes a difference. We welcome donations of any size, and every amount will help those in need during these difficult times.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How can I track the progress of the donation campaigns?</div>
+                <div class="collapse-content">
+                    <p>You can track the progress of both campaigns on our website's "Progress Tracker" section. This section shows the total funds raised, the number of beneficiaries, and live updates from the relief efforts and quota movement activities.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <script src="js/index.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 
 </html>
